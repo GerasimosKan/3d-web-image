@@ -1,3 +1,64 @@
+.frame {
+	padding: 3rem 5vw;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.frame > * {
+	position: relative;
+}
+
+.frame__title {
+	font-size: 1.25rem;
+	margin: 0;
+	font-weight: normal;
+}
+
+.frame__tagline {
+	display: none;
+	margin: 0.5rem 0 2rem;
+}
+
+.frame__links {
+	margin: 1rem 0;
+}
+
+.frame a {
+	text-transform: lowercase;
+}
+
+.frame__links a:not(:last-child),
+.frame__demos a:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.frame__demos {
+	margin: 1rem 0;
+}
+
+.frame__demo--current,
+.frame__demo--current:hover {
+	color: var(--color-text);
+}
+
+.frame__content {
+	line-height: 0.8;
+	pointer-events: none;
+	margin-top: 13vh;
+	font-size: 40vw;
+	font-family: essonnes-display, serif;
+	mix-blend-mode: soft-light;
+	font-weight: normal;
+	text-align: center;
+	color: #c2ba8b;
+}
+
 @media screen and (min-width: 53em) {
 	.message {
 		display: none;
